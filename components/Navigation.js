@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Moon } from "@styled-icons/heroicons-solid";
-import NowPlaying from "./NowPlaying";
+import styled from 'styled-components';
+import { Moon } from '@styled-icons/heroicons-solid';
+import NowPlaying from './NowPlaying';
 
 const Navigation = () => {
   return (
@@ -44,7 +44,6 @@ const ThemeSwitcher = styled(Moon)`
   width: 20px;
   height: 20px;
   margin: 0 10px;
-  margin-bottom: 5px;
   color: #000;
 `;
 
