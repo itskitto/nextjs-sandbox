@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3100",
     "build": "next build",
     "start": "next start"
   },
@@ -12,6 +12,7 @@
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "styled-reset": "^4.3.4"
   }
 }
