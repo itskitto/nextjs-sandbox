@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Moon } from "@styled-icons/heroicons-solid";
+import NowPlaying from "./NowPlaying";
 
 const Navigation = () => {
   return (
@@ -7,6 +9,8 @@ const Navigation = () => {
       <NavigationMenu>
         <NavigationItem>Home</NavigationItem>
         <NavigationItem>Blog</NavigationItem>
+        <ThemeSwitcher />
+        <NowPlaying />
       </NavigationMenu>
     </Container>
   );
@@ -34,6 +38,14 @@ const NavigationItem = styled.li`
   margin: 0 10px;
   font-size: 1.15em;
   font-weight: 500;
+`;
+
+const ThemeSwitcher = styled(Moon)`
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  margin-bottom: 5px;
+  color: #000;
 `;
 
 export default Navigation;
