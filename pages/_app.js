@@ -4,6 +4,11 @@ import reset from "styled-reset";
 const GlobalStyles = createGlobalStyle`
   ${reset}
 
+  html,
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   body {
     max-width: 1000px;
     width: 100%;

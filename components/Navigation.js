@@ -20,8 +20,8 @@ const Container = styled.div`
 `;
 
 const Logo = styled.h1`
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 900;
 `;
 
 const NavigationMenu = styled.ul`
@@ -32,6 +32,8 @@ const NavigationMenu = styled.ul`
 
 const NavigationItem = styled.li`
   margin: 0 10px;
+  font-size: 1.15em;
+  font-weight: 500;
 `;
 
 export default Navigation;
