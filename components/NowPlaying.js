@@ -7,10 +7,14 @@ import fetcher from '../lib/fetcher';
 export default function NowPlaying() {
   const { data } = useSWR('/api/spotify', fetcher);
 
+  console.log(data);
+
   return (
     <>
       <StyledSpotify />
-      {data ? `${data.title} - ${data.artist}` : 'Not Listening'}
+      {data && data.isPlaying
+        ? `${data.title} - ${data.artist}`
+        : 'Not Listening'}
     </>
   );
 }
