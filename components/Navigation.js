@@ -5,11 +5,8 @@ import NowPlaying from './NowPlaying';
 const Navigation = () => {
   return (
     <Container>
-      <Logo>itskitto</Logo>
+      <ThemeSwitcher />
       <NavigationMenu>
-        <NavigationItem>Home</NavigationItem>
-        <NavigationItem>Blog</NavigationItem>
-        <ThemeSwitcher />
         <NowPlaying />
       </NavigationMenu>
     </Container>
@@ -21,11 +18,6 @@ const Container = styled.div`
   max-width: 1000px;
   width: 100%;
   justify-content: space-between;
-`;
-
-const Logo = styled.h1`
-  font-size: 2.25em;
-  font-weight: 900;
 `;
 
 const NavigationMenu = styled.ul`
