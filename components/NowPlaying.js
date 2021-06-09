@@ -12,7 +12,9 @@ export default function NowPlaying() {
   return (
     <>
       <StyledSpotify />
-      {data.isPlaying ? `${data.title} - ${data.artist}` : 'Not Listening'}
+      {data && data.isPlaying
+        ? `${data.title} - ${data.artist}`
+        : 'Not Listening'}
     </>
   );
 }
