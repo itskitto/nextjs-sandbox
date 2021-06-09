@@ -7,8 +7,6 @@ import fetcher from '../lib/fetcher';
 export default function NowPlaying() {
   const { data } = useSWR('/api/spotify', fetcher);
 
-  console.log(data);
-
   return (
     <>
       <StyledSpotify />
